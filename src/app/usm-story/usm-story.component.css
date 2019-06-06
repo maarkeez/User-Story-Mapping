@@ -1,0 +1,25 @@
+.usm-story{
+	background-color: #feffcb;
+	width: 210px;
+	height: 85px;
+	font-family: Arial;
+	text-align: left;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 4px 4px rgba(102,102,102,0.2);
+	padding: 20px;
+}
+
+div.usm-story:hover {
+	background-color: #e4e5b6;
+}
+
+.usm-story textarea{
+	background-color: inherit;
+	border-style: none;
+	width: 210px;
+	height: 85px;
+	overflow: hidden;
+	resize: none;
+}
+
