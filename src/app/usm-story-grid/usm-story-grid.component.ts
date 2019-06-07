@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Story } from '../model/usm-story.model';
 
 @Component({
   selector: 'app-usm-story-grid',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./usm-story-grid.component.css']
 })
 export class UsmStoryGridComponent implements OnInit {
+
+  @Input() stories : Story[];
 
   constructor() { }
 
