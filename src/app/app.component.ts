@@ -15,7 +15,7 @@ export class AppComponent {
   public stories : Story[][] = [
 	  [this.storyOne, this.storyTwo],
 	  [this.storyThree, this.storyFour],
-	  [this.storyOne, null],
+	  [null, this.storyOne],
 	  [this.storyThree, this.storyFour]
   ];
 

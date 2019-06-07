@@ -1,4 +1,4 @@
-<div class="usm-story-grid">
+<div class="usm-story-grid" [ngStyle]="numberOfColumns()">
 	<ng-container *ngFor="let row of storyGrid">
 		<ng-container *ngFor="let story of row">
 			<div class="usm-story-grid-container">

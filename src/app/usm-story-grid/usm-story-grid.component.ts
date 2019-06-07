@@ -8,20 +8,34 @@ import { Story } from '../model/usm-story.model';
 })
 export class UsmStoryGridComponent implements OnInit {
 
+  private columns : int = 3;
+
   @Input() storyGrid : Story[][];
 
-  constructor() { }
+  constructor() {
+
+   }
 
   ngOnInit() {
+    this.fillWithEmptyStories();
   }
 
-  public columnsStyle(): String {
-  	var columnsStyle = "auto";
-  	for (let row of this.storyGrid) {
-	    columnsStyle = columnsStyle + " auto";
-	}
-	console.log("Style: " + columnsStyle);
-  	return columnsStyle;
+  fillWithEmptyStories(){
+    for (let row = 0; row < this.storyGrid.length; row++) {
+      var missingStories = this.columns - this.storyGrid[row].length;
+      
+      for (let i = 0; i < missingStories; i++) {
+        this.storyGrid[row].push(null);
+      }
+    }
+  }
+  public numberOfColumns(): any {
+  	var gridTemplateColumns = "auto";
+  	for (let i = 1; i < this.columns; i++) {
+	    gridTemplateColumns = gridTemplateColumns + " auto";
+	  }
+	  console.log("Style: " + gridTemplateColumns);
+  	return { 'grid-template-columns': gridTemplateColumns };
   }
 
 }
