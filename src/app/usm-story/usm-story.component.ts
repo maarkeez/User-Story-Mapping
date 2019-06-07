@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Story } from '../model/usm-story.model';
 
 @Component({
   selector: 'app-usm-story',
@@ -8,15 +9,19 @@ import { NgForm } from '@angular/forms';
 })
 export class UsmStoryComponent implements OnInit {
 
-  public storyText: String;
+  @Input() story: Story;
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  public showStory() : boolean {
+  	return this.story != null;
   }
 
-  public enableEditText(){
-  	  console.log("Editing text");
+  public addStory() {
+  	console.log("Adding story")
+  	this.story = new Story("");
   }
 
 }

@@ -10,16 +10,33 @@
 	padding: 20px;
 }
 
-div.usm-story:hover {
+.usm-story:hover {
 	background-color: #e4e5b6;
 }
 
-.usm-story textarea{
+.usm-story-textarea{
 	background-color: inherit;
 	border-style: none;
 	width: 210px;
 	height: 85px;
 	overflow: hidden;
 	resize: none;
+}
+
+.usm-story-container{
+	 margin-right: 8px;
+	 margin-bottom: 8px;
+}
+
+.usm-story-emtpy{
+	background-color: transparent;
+	width: 212px;
+	height: 87px;
+	font-family: Arial;
+	padding: 20px;
+}
+
+.usm-story-emtpy:hover{
+	background-color: #e4e5b6;
 }
 

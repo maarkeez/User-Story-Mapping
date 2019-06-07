@@ -1,0 +1,9 @@
+<div class="usm-story-grid" [ngStyle]="numberOfColumns()">
+	<ng-container *ngFor="let row of storyGrid">
+		<ng-container *ngFor="let story of row">
+			<div class="usm-story-grid-container">
+	  			<app-usm-story [story]="story"></app-usm-story>
+	  		</div>
+		</ng-container>
+	</ng-container>
+</div>

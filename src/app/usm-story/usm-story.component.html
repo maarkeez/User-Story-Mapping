@@ -1,3 +1,7 @@
-<div class="usm-story" (click)="enableEditText()">
-	<textarea>{{storyText}}</textarea>
+<div class="usm-story-container">
+	<div *ngIf="showStory()" class="usm-story">
+		<textarea class="usm-story-textarea">{{story.text}}</textarea>
+	</div>	
+	<div *ngIf="!showStory()" class="usm-story-emtpy" (click)="addStory()">
+	</div>		
 </div>

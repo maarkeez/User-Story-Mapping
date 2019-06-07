@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Story } from './model/usm-story.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'user-story-mapping';
+
+  public stories : Story[][] = [];
+  
+  constructor(){ }
+
 }
