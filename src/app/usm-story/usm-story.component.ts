@@ -15,4 +15,13 @@ export class UsmStoryComponent implements OnInit {
 
   ngOnInit() { }
 
+  public showStory() : boolean {
+  	return this.story != null;
+  }
+
+  public addStory() {
+  	console.log("Adding story")
+  	this.story = new Story("");
+  }
+
 }

@@ -8,11 +8,20 @@ import { Story } from '../model/usm-story.model';
 })
 export class UsmStoryGridComponent implements OnInit {
 
-  @Input() stories : Story[];
+  @Input() storyGrid : Story[][];
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public columnsStyle(): String {
+  	var columnsStyle = "auto";
+  	for (let row of this.storyGrid) {
+	    columnsStyle = columnsStyle + " auto";
+	}
+	console.log("Style: " + columnsStyle);
+  	return columnsStyle;
   }
 
 }

@@ -1,0 +1,13 @@
+.usm-story-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: #fff6f4;
+  width: fit-content;
+}
+
+.usm-story-grid-container {
+	background-color: transparent;
+	width: 260px;
+	height: 140px;
+}

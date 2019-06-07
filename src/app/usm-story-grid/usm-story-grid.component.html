@@ -1,3 +1,9 @@
-<div *ngFor="let story of stories">
-  <app-usm-story [story]="story"></app-usm-story>
+<div class="usm-story-grid">
+	<ng-container *ngFor="let row of storyGrid">
+		<ng-container *ngFor="let story of row">
+			<div class="usm-story-grid-container">
+	  			<app-usm-story [story]="story"></app-usm-story>
+	  		</div>
+		</ng-container>
+	</ng-container>
 </div>

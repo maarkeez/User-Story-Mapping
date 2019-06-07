@@ -28,3 +28,15 @@
 	 margin-bottom: 8px;
 }
 
+.usm-story-emtpy{
+	background-color: transparent;
+	width: 212px;
+	height: 87px;
+	font-family: Arial;
+	padding: 20px;
+}
+
+.usm-story-emtpy:hover{
+	background-color: #e4e5b6;
+}
+
