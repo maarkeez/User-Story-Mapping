@@ -8,7 +8,8 @@ import { Story } from '../model/usm-story.model';
 })
 export class UsmStoryGridComponent implements OnInit {
 
-  private columns : int = 3;
+  private columns : int = 10;
+  private rows : int = 10;
 
   @Input() storyGrid : Story[][];
 
@@ -21,6 +22,11 @@ export class UsmStoryGridComponent implements OnInit {
   }
 
   fillWithEmptyStories(){
+    var missingRows = this.rows - this.storyGrid.length;
+    for (let i = 0; i < missingRows; i++) {
+        this.storyGrid.push([]);
+    }
+
     for (let row = 0; row < this.storyGrid.length; row++) {
       var missingStories = this.columns - this.storyGrid[row].length;
       
