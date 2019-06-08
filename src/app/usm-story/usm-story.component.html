@@ -1,7 +1,13 @@
 <div class="usm-story-container">
 	<div *ngIf="showStory()" class="usm-story">
 		<textarea class="usm-story-textarea">{{story.text}}</textarea>
-	</div>	
+		<button class="usm-story-menu-btn" (click)="onMenuClick()"></button> 
+	</div>
+	<div *ngIf="showMenu()" class="usm-story-menu">
+		<button (click)="removeStory()" 
+		style="border: none; background-color: inherit; background-image: url('../../assets/img/delete.svg'); background-repeat: no-repeat; height: 20px; width: 20px; ">
+		</button> 
+	</div>
 	<div *ngIf="!showStory()" class="usm-story-emtpy" (click)="addStory()">
 	</div>		
 </div>

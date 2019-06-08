@@ -10,6 +10,7 @@ import { Story } from '../model/usm-story.model';
 export class UsmStoryComponent implements OnInit {
 
   @Input() story: Story;
+  private openMenu : boolean = false;
 
   constructor() { }
 
@@ -19,9 +20,20 @@ export class UsmStoryComponent implements OnInit {
   	return this.story != null;
   }
 
+  public showMenu() : boolean {
+    return this.showStory() && this.openMenu;
+  }
+
   public addStory() {
-  	console.log("Adding story")
   	this.story = new Story("");
+  }
+
+  public onMenuClick() {
+    this.openMenu = !this.openMenu;
+  }
+
+  public removeStory() {
+    this.story = null;
   }
 
 }

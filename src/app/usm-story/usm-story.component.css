@@ -40,3 +40,41 @@
 	background-color: #e4e5b6;
 }
 
+.usm-story-menu-btn {
+	position: relative;
+	float: right;
+	top: -10px;
+	border: none;
+	background-color: inherit;
+	background-image: url("../../assets/img/usm-story-menu.svg");
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+}
+
+.usm-story-menu-btn:hover {
+	background-color: #B6B791;
+}
+
+.usm-story-menu {
+	position: relative;
+	right: -260px;
+	top: -127px;
+	height: 125px;
+	width: 50px;
+	background-color: white;
+	border: solid 1px;
+	border-color: #82cbf6;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.usm-story-trash-btn {
+	border: none;
+	background-color: inherit;
+	background-image: url('../../assets/img/delete.svg');
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+}

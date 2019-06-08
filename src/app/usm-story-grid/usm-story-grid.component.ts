@@ -8,8 +8,8 @@ import { Story } from '../model/usm-story.model';
 })
 export class UsmStoryGridComponent implements OnInit {
 
-  private columns : int = 10;
-  private rows : int = 10;
+  private columns : number = 10;
+  private rows : number = 10;
 
   @Input() storyGrid : Story[][];
 
