@@ -40,3 +40,18 @@
 	background-color: #e4e5b6;
 }
 
+.usm-story-trash-btn{
+	position: relative;
+	float: right;
+	top: -10px;
+	border: none;
+	background-color: inherit;
+	background-image: url('../../assets/img/delete.svg');
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+}
+
+.usm-story-trash-btn:hover {
+	background-color: #B6B791;
+}

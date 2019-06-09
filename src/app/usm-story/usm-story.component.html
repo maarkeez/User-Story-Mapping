@@ -1,7 +1,8 @@
 <div class="usm-story-container">
 	<div *ngIf="showStory()" class="usm-story">
 		<textarea class="usm-story-textarea">{{story.text}}</textarea>
-	</div>	
+		<button class="usm-story-trash-btn" (click)="removeStory()"></button> 
+	</div>
 	<div *ngIf="!showStory()" class="usm-story-emtpy" (click)="addStory()">
 	</div>		
 </div>
