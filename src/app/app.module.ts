@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { UsmStoryComponent } from './usm-story/usm-story.component';
 import { UsmStoryGridComponent } from './usm-story-grid/usm-story-grid.component';
+import { UsmMainMenuComponent } from './usm-main-menu/usm-main-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsmStoryComponent,
-    UsmStoryGridComponent
+    UsmStoryGridComponent,
+    UsmMainMenuComponent
   ],
   imports: [
     BrowserModule
