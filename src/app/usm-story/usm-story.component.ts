@@ -20,16 +20,8 @@ export class UsmStoryComponent implements OnInit {
   	return this.story != null;
   }
 
-  public showMenu() : boolean {
-    return this.showStory() && this.openMenu;
-  }
-
   public addStory() {
   	this.story = new Story("");
-  }
-
-  public onMenuClick() {
-    this.openMenu = !this.openMenu;
   }
 
   public removeStory() {
