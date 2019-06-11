@@ -1,8 +1,8 @@
 <div class="usm-story-grid" [ngStyle]="numberOfColumns()">
-	<ng-container *ngFor="let row of storyGrid">
-		<ng-container *ngFor="let story of row">
+	<ng-container *ngFor="let row of storyService.getStories(); index as rowIndex">
+		<ng-container *ngFor="let story of row; index as columnIndex">
 			<div class="usm-story-grid-container">
-	  			<app-usm-story [story]="story"></app-usm-story>
+	  			<app-usm-story [columnIndex]="columnIndex" [rowIndex]="rowIndex"></app-usm-story>
 	  		</div>
 		</ng-container>
 	</ng-container>

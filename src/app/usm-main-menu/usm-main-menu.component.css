@@ -1,0 +1,22 @@
+.usm-main-menu{
+	text-align: left;
+	position: fixed;
+	bottom: 0;
+	left:50%
+}
+.usm-main-menu-save-btn{
+	height: 100px;
+	width: 100px;
+	padding: 0px;
+	border-radius: 15px;
+	border-color: #285680;
+	background-color: transparent;
+}
+
+.usm-main-menu-save-btn:hover{
+	background-color: #285680;
+}
+.usm-main-menu-save-img{
+	height: 80px;
+	width: 80px;
+}
