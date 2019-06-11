@@ -8,9 +8,7 @@ import { Story } from './model/usm-story.model';
 })
 export class AppComponent {
   title = 'user-story-mapping';
-
-  public stories : Story[][] = [];
-  
+    
   constructor(){ }
 
 }

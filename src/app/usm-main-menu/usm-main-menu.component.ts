@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Story } from '../model/usm-story.model';
+import { UsmStoryService } from '../usm-story.service';
+
 
 @Component({
   selector: 'app-usm-main-menu',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsmMainMenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private storyService: UsmStoryService) { }
 
-  ngOnInit() {
+
+  ngOnInit() { }
+
+  public save() {
+  	console.log("Saving stories: ");
+  	console.log(this.storyService.getStories());
   }
 
 }

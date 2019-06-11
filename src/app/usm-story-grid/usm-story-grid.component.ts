@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Story } from '../model/usm-story.model';
+import { UsmStoryService } from '../usm-story.service';
 
 @Component({
   selector: 'app-usm-story-grid',
@@ -8,36 +9,13 @@ import { Story } from '../model/usm-story.model';
 })
 export class UsmStoryGridComponent implements OnInit {
 
-  private columns : number = 10;
-  private rows : number = 10;
+  constructor(public storyService: UsmStoryService) { }
 
-  @Input() storyGrid : Story[][];
+  ngOnInit() { }
 
-  constructor() {
-
-   }
-
-  ngOnInit() {
-    this.fillWithEmptyStories();
-  }
-
-  fillWithEmptyStories(){
-    var missingRows = this.rows - this.storyGrid.length;
-    for (let i = 0; i < missingRows; i++) {
-        this.storyGrid.push([]);
-    }
-
-    for (let row = 0; row < this.storyGrid.length; row++) {
-      var missingStories = this.columns - this.storyGrid[row].length;
-      
-      for (let i = 0; i < missingStories; i++) {
-        this.storyGrid[row].push(null);
-      }
-    }
-  }
   public numberOfColumns(): any {
   	var gridTemplateColumns = "auto";
-  	for (let i = 1; i < this.columns; i++) {
+  	for (let i = 1; i < this.storyService.getNumberOfColumns(); i++) {
 	    gridTemplateColumns = gridTemplateColumns + " auto";
 	  }
 	  console.log("Style: " + gridTemplateColumns);
