@@ -1,0 +1,16 @@
+.usm-story-saver-btn{
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	border-radius: 10%;
+	border-color: #285680;
+	background-color: #285680;
+}
+
+.usm-story-saver-btn:hover{
+	background-color:  #244D73;
+}
+.usm-story-saver-img{
+	height: 80%;
+	width: 80%;
+}

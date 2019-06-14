@@ -1,0 +1,16 @@
+.usm-story-loader-btn{
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	border-radius: 10%;
+	border-color:  #D07C40;
+	background-color: #D07C40;
+}
+
+.usm-story-loader-btn:hover{
+	background-color:   #BB6F39;
+}
+.usm-story-loader-img{
+	height: 80%;
+	width: 80%;
+}

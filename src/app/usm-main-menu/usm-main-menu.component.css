@@ -1,22 +1,21 @@
 .usm-main-menu{
-	text-align: left;
 	position: fixed;
 	bottom: 0;
-	left:50%
-}
-.usm-main-menu-save-btn{
 	height: 100px;
-	width: 100px;
-	padding: 0px;
-	border-radius: 15px;
-	border-color: #285680;
-	background-color: transparent;
+	width: 100%;
 }
 
-.usm-main-menu-save-btn:hover{
-	background-color: #285680;
+.usm-main-menu-container{
+	width: 50%;
+	margin: auto;
 }
-.usm-main-menu-save-img{
-	height: 80px;
-	width: 80px;
+
+.usm-main-menu-grid {
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-gap: 10px;
+	background-color: transparent;
+	width: fit-content;
+	grid-template-columns: 100px 100px;
 }
