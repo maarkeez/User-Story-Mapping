@@ -1,8 +1,21 @@
 .usm-main-menu{
-	text-align: left;
 	position: fixed;
 	bottom: 0;
-	left:50%;
-	min-height: 100px;
 	height: 100px;
+	width: 100%;
+}
+
+.usm-main-menu-container{
+	width: 50%;
+	margin: auto;
+}
+
+.usm-main-menu-grid {
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-gap: 10px;
+	background-color: transparent;
+	width: fit-content;
+	grid-template-columns: 100px 100px;
 }

@@ -1,8 +1,8 @@
 .usm-story-saver-btn{
-	height: 100px;
-	width: 100px;
+	height: 100%;
+	width: 100%;
 	padding: 0px;
-	border-radius: 15px;
+	border-radius: 10%;
 	border-color: #285680;
 	background-color: #285680;
 }
@@ -11,6 +11,6 @@
 	background-color:  #244D73;
 }
 .usm-story-saver-img{
-	height: 80px;
-	width: 80px;
+	height: 80%;
+	width: 80%;
 }
