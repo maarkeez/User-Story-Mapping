@@ -8,10 +8,15 @@ export class UsmStoryService {
 
   private columns : number = 10;
   private rows : number = 10;
-  private stories : Story[][] = [];
+  private stories : Story[][];
 
   constructor() { 
-  	this.fillWithEmptyStories();
+  	this.load([]);
+  }
+
+  public load(stories: Story[][]){
+    this.stories = stories;
+    this.fillWithEmptyStories();
   }
 
   public getNumberOfColumns() : number {
