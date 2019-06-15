@@ -1,11 +1,11 @@
 .app-usm-color-picker-container{
-	
+	font-family: Arial;
 	top: 0;
 	right: 0px;
 	position: absolute;
 	height: 100%;
 	width: 20%;
-	background-color: grey;
+	background-color: rgba(0,0,0,.1);
 }
 
 .app-usm-color-picker-header{
@@ -50,6 +50,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	background-color: white;
+	border-radius: .5vw;
+	box-shadow: .2vw .2vw .2vw  rgba(193,193,193, .3);
 }
 
 .usm-color-picker-card-text{
@@ -92,8 +94,7 @@
   background-color: white;
   border-radius: 50%;
   display: inline-block;
-  border: solid 0.1vw #bbb;
-  box-shadow: 0.2vw 0.2vw 0.2vw  rgba(193,193,193, 0.3);
-
+  border: solid .1vw #bbb;
+  box-shadow: .2vw .2vw .2vw  rgba(193,193,193, .3);
 }
 

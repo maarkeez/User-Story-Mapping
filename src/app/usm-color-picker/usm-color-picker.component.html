@@ -5,20 +5,21 @@
 		</div>
 	</div>
 	<div class="app-usm-color-picker-body">
-		<div class="usm-color-picker-card">
-			<div class="usm-color-picker-card-text">
-				<div>
-					User story
+		<ng-container *ngFor="let color of getAvailableColors()">
+			<div class="usm-color-picker-card">
+				<div class="usm-color-picker-card-text">
+					<div>
+						{{color.name}}
+					</div>
+				</div>
+				<div class="usm-color-picker-card-color">
+					<div class="dot-container">
+						<div class="dot" [ngStyle]="dotStyle(color)"></div>
+					</div>
 				</div>
 			</div>
-			<div class="usm-color-picker-card-color">
-				<div class="dot-container">
-					<div class="dot"></div>
-				</div>
-			</div>
-		</div>
-		<div class="usm-color-picker-card-separator">
-		</div>
+			<div class="usm-color-picker-card-separator"></div>
+		</ng-container>
 	</div>
 
 </div>
