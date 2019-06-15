@@ -28,4 +28,9 @@ export class UsmColorPickerComponent implements OnInit {
   	return { 'background-color': storyColor.background };
   }
 
+  public selectColor(storyColor: StoryColor) {
+  	console.log("selected:");
+  	console.log(storyColor.name);
+  }
+
 }

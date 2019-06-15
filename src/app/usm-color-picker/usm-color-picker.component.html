@@ -6,7 +6,7 @@
 	</div>
 	<div class="app-usm-color-picker-body">
 		<ng-container *ngFor="let color of getAvailableColors()">
-			<div class="usm-color-picker-card">
+			<div class="usm-color-picker-card" (click)="selectColor(color)">
 				<div class="usm-color-picker-card-text">
 					<div>
 						{{color.name}}
