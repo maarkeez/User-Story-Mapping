@@ -21,6 +21,7 @@
 	background-color: transparent;
 	border-color: transparent;
 	text-align: center;
+	margin-left: 3%;
 }
 
 .usm-color-picker-close-img{
@@ -31,6 +32,11 @@
 	position: relative;
 	display: block;
 }
+
+.usm-color-picker-close-img:hover{
+	filter: brightness(.9);
+}
+
 
 .app-usm-color-picker-body{
 	width: 100%;
