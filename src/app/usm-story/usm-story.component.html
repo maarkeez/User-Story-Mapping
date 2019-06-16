@@ -1,7 +1,12 @@
 <div class="usm-story-container">
 	<div *ngIf="showStory()" class="usm-story">
 		<textarea class="usm-story-textarea" [(ngModel)]="getStory().text"></textarea>
-		<button class="usm-story-trash-btn" (click)="removeStory()"></button> 
+		<button class="usm-story-trash-btn" (click)="removeStory()">
+			<img class="usm-story-edit-img" src="assets/img/delete.svg">
+		</button> 
+		<button class="usm-story-edit-btn">
+			<img class="usm-story-edit-img" src="assets/img/edit.svg">
+		</button>
 	</div>
 	<div *ngIf="!showStory()" class="usm-story-emtpy" (click)="addStory()">
 	</div>		

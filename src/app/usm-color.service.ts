@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { StoryColor } from './model/usm-story-color.model';
 
 @Injectable({
   providedIn: 'root'

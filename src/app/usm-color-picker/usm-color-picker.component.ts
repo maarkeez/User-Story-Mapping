@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StoryColor } from '../model/usm-story-color.model';
+import { UsmColorService } from '../usm-color.service';
 
 @Component({
   selector: 'app-usm-color-picker',
@@ -8,20 +9,12 @@ import { StoryColor } from '../model/usm-story-color.model';
 })
 export class UsmColorPickerComponent implements OnInit {
 
-  private availableColors : StoryColor[] = [
-    	new StoryColor("Big", "#4FBA92", "#47a783"),
-  		new StoryColor("Medium", "#feffcb", "#e4e5b6"),
-  		new StoryColor("Small", "#f8cc5d","#F8C74C"),
-  		new StoryColor("User", "#CBEEED","#B6D6D5")
-  ];
+  constructor(private usmColorService: UsmColorService) { }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   public getAvailableColors() : StoryColor[]{
-  	return this.availableColors;
+  	return this.usmColorService.getAvailableColors();
   }
 
   public dotStyle(storyColor: StoryColor): any {
