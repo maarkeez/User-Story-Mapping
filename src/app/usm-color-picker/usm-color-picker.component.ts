@@ -34,4 +34,19 @@ export class UsmColorPickerComponent implements OnInit {
     this.usmColorService.clear();
   }
 
+  public isSelected(color: StoryColor){
+    
+    var isSelectedAux =  this.usmColorService.isSelectedColor(color);
+    console.log( color.name + ", Is selected? " + isSelectedAux);
+    return isSelectedAux;
+  }
+
+  public selectedStyle():any{
+    return {"border-color": "grey", "border": "solid .1vw"};
+  }
+
+  public unselectedStyle():any{
+    return {"border-color": "transparent"};
+  }
+
 }

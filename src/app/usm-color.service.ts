@@ -46,5 +46,9 @@ export class UsmColorService {
   private clearStory(){
     this.isSelected = false;
   }
+
+  public isSelectedColor(color: StoryColor){
+    return this.hasSelectedStory() && this.storyService.getStory(this.rowIndex, this.columnIndex).color.name == color.name;
+  }
   
 }
