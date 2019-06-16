@@ -13,10 +13,10 @@ export class UsmColorService {
   private columnIndex: number;
 
   private availableColors : StoryColor[] = [
-    	new StoryColor("Big", "#4FBA92", "#47a783"),
-  		new StoryColor("Medium", "#feffcb", "#e4e5b6"),
-  		new StoryColor("Small", "#f8cc5d","#C6A34A"),
-  		new StoryColor("User", "#CBEEED","#B6D6D5")
+    	new StoryColor("Green", "#4FBA92", "#47a783"),
+  		new StoryColor("Yellow", "#feffcb", "#e4e5b6"),
+  		new StoryColor("Orange", "#f8cc5d","#C6A34A"),
+  		new StoryColor("Blue", "#CBEEED","#B6D6D5")
   ];
 
   constructor(private storyService: UsmStoryService) { }
