@@ -1,0 +1,25 @@
+<div *ngIf="isOpen()" class="app-usm-color-picker-container">
+	<div class="app-usm-color-picker-header">
+		<div class="usm-color-picker-close-btn">
+			<img class="usm-color-picker-close-img" src="assets/img/close.svg"/>
+		</div>
+	</div>
+	<div class="app-usm-color-picker-body">
+		<ng-container *ngFor="let color of getAvailableColors()">
+			<div class="usm-color-picker-card" (click)="selectColor(color)">
+				<div class="usm-color-picker-card-text">
+					<div>
+						{{color.name}}
+					</div>
+				</div>
+				<div class="usm-color-picker-card-color">
+					<div class="dot-container">
+						<div class="dot" [ngStyle]="dotStyle(color)"></div>
+					</div>
+				</div>
+			</div>
+			<div class="usm-color-picker-card-separator"></div>
+		</ng-container>
+	</div>
+
+</div>

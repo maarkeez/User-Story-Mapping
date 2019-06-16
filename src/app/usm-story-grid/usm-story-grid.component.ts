@@ -18,7 +18,6 @@ export class UsmStoryGridComponent implements OnInit {
   	for (let i = 1; i < this.storyService.getNumberOfColumns(); i++) {
 	    gridTemplateColumns = gridTemplateColumns + " auto";
 	  }
-	  console.log("Style: " + gridTemplateColumns);
   	return { 'grid-template-columns': gridTemplateColumns };
   }
 

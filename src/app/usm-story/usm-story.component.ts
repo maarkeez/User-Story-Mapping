@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Story } from '../model/usm-story.model';
 import { UsmStoryService } from '../usm-story.service';
+import { UsmColorService } from '../usm-color.service';
 
 @Component({
   selector: 'app-usm-story',
@@ -14,8 +15,9 @@ export class UsmStoryComponent implements OnInit {
   @Input() rowIndex: number;
 
   private openMenu : boolean = false;
+  public onHover : boolean = false;
 
-  constructor(private storyService: UsmStoryService) { }
+  constructor(private storyService: UsmStoryService, private usmColorService: UsmColorService) { }
 
   ngOnInit() { }
 
@@ -33,6 +35,18 @@ export class UsmStoryComponent implements OnInit {
 
   public getStory() : Story {
     return this.storyService.getStory(this.rowIndex, this.columnIndex);
+  }
+
+  public editStory(){
+    this.usmColorService.selectStory(this.rowIndex, this.columnIndex);
+  }
+
+  public defaultStyle(): any {
+    return { 'background-color': this.storyService.getStory(this.rowIndex, this.columnIndex).color.background };
+  }
+
+  public onHoverStyle(): any {
+    return { 'background-color': this.storyService.getStory(this.rowIndex, this.columnIndex).color.hover };
   }
 
 }

@@ -1,0 +1,104 @@
+.app-usm-color-picker-container{
+	font-family: Arial;
+	top: 0;
+	right: 0px;
+	position: absolute;
+	height: 100%;
+	width: 20%;
+	background-color: rgba(0,0,0,.1);
+}
+
+.app-usm-color-picker-header{
+	width: 100%;
+	height: 5%;
+}
+
+.usm-color-picker-close-btn{
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 12.5%;
+	background-color: transparent;
+	border-color: transparent;
+	text-align: center;
+}
+
+.usm-color-picker-close-img{
+	top: 15%;
+	left: 15%;
+	height: 70%;
+	width: 70%;
+	position: relative;
+	display: block;
+}
+
+.app-usm-color-picker-body{
+	width: 100%;
+	height: 95%;
+}
+
+.usm-color-picker-card-separator{
+	height: 1%;
+	width: 100%;
+	background-color: transparent;
+}
+
+.usm-color-picker-card{
+	height: 10%;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border-radius: .5vw;
+	box-shadow: .2vw .2vw .2vw  rgba(193,193,193, .3);
+}
+
+.usm-color-picker-card:hover {
+	box-shadow: .2vw .2vw .2vw  rgba(193,193,193, .9);
+	margin-right: 10%;
+}
+
+.usm-color-picker-card-text{
+	height: 100%;
+	width: 70%;
+	display: block;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+}
+.usm-color-picker-card-text>div{
+	font-size: 1.5vw;
+	width: 100%;
+	height: 50%;
+	top: 25%;
+	bottom: 25%;
+	position: relative;
+	vertical-align: middle;
+}
+
+.usm-color-picker-card-color{
+	height: 100%;
+	width: 30%;
+	display: block;
+	float: right;
+}
+
+.dot-container{
+  height: 2.5vw;
+  width: 2.5vw;
+  margin-left: auto;
+  margin-right: auto;
+  top: calc(50% - 1.25vw);
+  position: relative;
+}
+
+.dot {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  border: solid .1vw #bbb;
+  box-shadow: .2vw .2vw .2vw  rgba(193,193,193, .3);
+}
+
