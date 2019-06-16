@@ -13,6 +13,14 @@ export class UsmColorPickerComponent implements OnInit {
 
   ngOnInit() { }
 
+  public isOpen() : boolean{
+    return this.usmColorService.hasSelectedStory();
+  }
+
+  public close() {
+    this.usmColorService.clear();
+  }
+
   public getAvailableColors() : StoryColor[]{
   	return this.usmColorService.getAvailableColors();
   }
@@ -22,8 +30,8 @@ export class UsmColorPickerComponent implements OnInit {
   }
 
   public selectColor(storyColor: StoryColor) {
-  	console.log("selected:");
-  	console.log(storyColor.name);
+    this.usmColorService.selectColor(storyColor);
+    this.usmColorService.clear();
   }
 
 }

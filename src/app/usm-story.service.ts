@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Story } from './model/usm-story.model';
+import { StoryColor } from './model/usm-story-color.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsmStoryService {
 
+  private defaultColor = new StoryColor("Medium", "#feffcb", "#e4e5b6");
   private columns : number = 10;
   private rows : number = 10;
   private stories : Story[][];
@@ -28,11 +30,15 @@ export class UsmStoryService {
   }
 
   public createEmptyStory(rowIndex: number, columnIndex: number) {
-  	return this.stories[rowIndex][columnIndex] = new Story("");
+  	return this.stories[rowIndex][columnIndex] = new Story("", this.defaultColor);
   }
 
   public deleteStory(rowIndex: number, columnIndex: number) {
   	return this.stories[rowIndex][columnIndex] = null;
+  }
+
+  public editColor(rowIndex: number, columnIndex: number) {
+    return this.stories[rowIndex][columnIndex] = null;
   }
 
   public getStories() : Story[][] {
