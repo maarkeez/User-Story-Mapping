@@ -1,8 +1,8 @@
 .app-usm-color-picker-container{
+	position: fixed;
 	font-family: Arial;
 	top: 0;
 	right: 0px;
-	position: absolute;
 	height: 100%;
 	width: 20%;
 	background-color: rgba(0,0,0,.1);
