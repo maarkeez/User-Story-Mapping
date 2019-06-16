@@ -1,8 +1,8 @@
 .app-usm-color-picker-container{
-	font-family: Arial;
+	position: fixed;
+	font-family: Comic Sans MS;
 	top: 0;
 	right: 0px;
-	position: absolute;
 	height: 100%;
 	width: 20%;
 	background-color: rgba(0,0,0,.1);
@@ -21,6 +21,7 @@
 	background-color: transparent;
 	border-color: transparent;
 	text-align: center;
+	margin-left: 3%;
 }
 
 .usm-color-picker-close-img{
@@ -31,6 +32,11 @@
 	position: relative;
 	display: block;
 }
+
+.usm-color-picker-close-img:hover{
+	filter: brightness(.9);
+}
+
 
 .app-usm-color-picker-body{
 	width: 100%;

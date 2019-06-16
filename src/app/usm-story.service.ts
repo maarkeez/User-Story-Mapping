@@ -7,7 +7,7 @@ import { StoryColor } from './model/usm-story-color.model';
 })
 export class UsmStoryService {
 
-  private defaultColor = new StoryColor("Medium", "#feffcb", "#e4e5b6");
+  private defaultColor = new StoryColor("Yellow", "#feffcb", "#e4e5b6");
   private columns : number = 10;
   private rows : number = 10;
   private stories : Story[][];

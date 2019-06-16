@@ -1,8 +1,8 @@
 .usm-story-grid {
   display: grid;
   grid-gap: 10px;
-  background-color: #fff6f4;
   width: fit-content;
+  box-shadow: .2vw .2vw .2vw  rgba(193,193,193, .3);
 }
 
 .usm-story-grid-container {
