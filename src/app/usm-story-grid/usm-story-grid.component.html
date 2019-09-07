@@ -1,4 +1,4 @@
-<div class="usm-story-grid" [ngStyle]="numberOfColumns()">
+<div class="usm-story-grid" [ngStyle]="numberOfColumns()" cdkDropListGroup>
 	<ng-container *ngFor="let row of storyService.getStories(); index as rowIndex">
 		<ng-container *ngFor="let story of row; index as columnIndex">
 			<div class="usm-story-grid-container">

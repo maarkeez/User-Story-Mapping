@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Story } from '../model/usm-story.model';
+import { Component, OnInit } from '@angular/core';
 import { UsmStoryService } from '../usm-story.service';
 
 @Component({
@@ -14,11 +13,11 @@ export class UsmStoryGridComponent implements OnInit {
   ngOnInit() { }
 
   public numberOfColumns(): any {
-  	var gridTemplateColumns = "auto";
-  	for (let i = 1; i < this.storyService.getNumberOfColumns(); i++) {
-	    gridTemplateColumns = gridTemplateColumns + " auto";
-	  }
-  	return { 'grid-template-columns': gridTemplateColumns };
+    let gridTemplateColumns = 'auto';
+    for (let i = 1; i < this.storyService.getNumberOfColumns(); i++) {
+      gridTemplateColumns = gridTemplateColumns + ' auto';
+    }
+    return { 'grid-template-columns': gridTemplateColumns };
   }
 
 }

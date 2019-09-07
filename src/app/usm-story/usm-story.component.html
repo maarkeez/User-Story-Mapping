@@ -4,7 +4,8 @@
 			[ngStyle]="onHover ? onHoverStyle() : defaultStyle()"
 			(mouseover)="onHover = true"
 			(mouseout)="onHover = false"
-	>
+	cdkDrag 
+	cdkDropList (cdkDropListDropped)="drop($event)" [cdkDropListData]="getCoordinates()">
 		<textarea class="usm-story-textarea" [(ngModel)]="getStory().text"></textarea>
 		<button class="usm-story-trash-btn" (click)="removeStory()">
 			<img class="usm-story-edit-img" src="assets/img/delete.svg">
@@ -13,6 +14,9 @@
 			<img class="usm-story-edit-img" src="assets/img/edit.svg">
 		</button>
 	</div>
-	<div *ngIf="!showStory()" class="usm-story-emtpy" (click)="addStory()">
+	<div 	*ngIf="!showStory()" 
+			class="usm-story-emtpy" 
+			(click)="addStory()"
+			cdkDropList (cdkDropListDropped)="drop($event)">
 	</div>		
 </div>
