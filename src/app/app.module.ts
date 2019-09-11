@@ -11,6 +11,7 @@ import { UsmStoryLoaderComponent } from './usm-story-loader/usm-story-loader.com
 import { UsmStorySaverComponent } from './usm-story-saver/usm-story-saver.component';
 import { UsmColorPickerComponent } from './usm-color-picker/usm-color-picker.component';
 import { UsmMainContainerComponent } from './usm-main-container/usm-main-container.component';
+import { UsmStoryGridAdderComponent } from './usm-story-grid-adder/usm-story-grid-adder.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UsmMainContainerComponent } from './usm-main-container/usm-main-contain
     UsmStoryLoaderComponent,
     UsmStorySaverComponent,
     UsmColorPickerComponent,
-    UsmMainContainerComponent
+    UsmMainContainerComponent,
+    UsmStoryGridAdderComponent
   ],
   imports: [
     BrowserModule,
