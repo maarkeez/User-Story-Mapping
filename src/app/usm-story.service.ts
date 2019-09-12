@@ -52,6 +52,23 @@ export class UsmStoryService {
     return this.stories;
   }
 
+  public addColumntOnLeftOf(columnIndex: number) {
+      this.columns++;
+      this.fillWithEmptyStories();
+      this.moveColumnsToRightSince(columnIndex);
+  }
+  private moveColumnsToRightSince(columnIndex: number) {
+      for (let column = this.columns - 1; column >= columnIndex ; column--) {
+        for (let row = 0; row < this.rows; row++) {
+          const story = this.getStories()[row][column];
+          if (story) {
+            this.getStories()[row][column + 1] = story;
+            this.deleteStory(row, column);
+          }
+        }
+      }
+  }
+
   private fillWithEmptyStories() {
     const missingRows = this.rows - this.getStories().length;
     for (let i = 0; i < missingRows; i++) {

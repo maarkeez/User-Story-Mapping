@@ -21,6 +21,7 @@
 	overflow: hidden;
 	resize: none;
 	font-size: 170%;
+	outline: none;
 }
 
 .usm-story-container{
