@@ -1,15 +1,25 @@
-<div cdkDropListGroup>
-	<ng-container *ngFor="let row of storyService.getStories(); index as rowIndex">
-    <div class="usm-grid-row">
-      <ng-container *ngFor="let story of row; index as columnIndex">
-          <div class="mock-user-story" >
-              &nbsp;
-              
-          </div>
-          <div class="usm-grid-column-separator">&nbsp;</div>
-      </ng-container>
-      
-    </div>
-    <div class="usm-grid-row-separator">&nbsp;</div>
-	</ng-container>
+<div class="usm-grid-container" cdkDropListGroup>
+
+    <ng-container *ngFor="let row of storyService.getStories(); index as rowIndex">
+        <div class="usm-grid-row">
+            <ng-container *ngFor="let story of row; index as columnIndex">
+                <div class="usm-story-container">
+                    <div class="usm-story-border usm-story-top"></div>
+                    <div class="usm-story-border usm-story-bottom"></div>
+                    <div class="mock-user-story">
+                        [ {{rowIndex}} , {{columnIndex}} ]
+                        <app-usm-story [columnIndex]="columnIndex" [rowIndex]="rowIndex"></app-usm-story>
+                    </div>
+                    <div class="usm-story-border usm-story-left"></div>
+                    <div class="usm-story-border usm-story-right"></div>
+                </div>
+
+                <div class="usm-grid-column-separator"></div>
+            </ng-container>
+            
+        </div>
+        
+        <div class="usm-grid-row-separator"></div>
+    </ng-container>
+
 </div>
