@@ -4,13 +4,13 @@
         <div class="usm-grid-row">
             <ng-container *ngFor="let story of row; index as columnIndex">
                 <div class="usm-story-container">
-                    <div class="usm-story-border usm-story-top"></div>
-                    <div class="usm-story-border usm-story-bottom"></div>
+                    <div class="usm-story-border usm-story-top" (click)="addRowAboveOf(rowIndex)"></div>
+                    <div class="usm-story-border usm-story-bottom" (click)="addRowDownOf(rowIndex)"></div>
                     <div class="mock-user-story">
                         <app-usm-story [columnIndex]="columnIndex" [rowIndex]="rowIndex"></app-usm-story>
                     </div>
                     <div class="usm-story-border usm-story-left" (click)="addColumntOnLeftOf(columnIndex)"></div>
-                    <div class="usm-story-border usm-story-right"></div>
+                    <div class="usm-story-border usm-story-right" (click)="addColumntOnRightOf(columnIndex)"></div>
                 </div>
 
                 <div class="usm-grid-column-separator"></div>

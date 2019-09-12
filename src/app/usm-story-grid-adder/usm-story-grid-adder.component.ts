@@ -20,8 +20,20 @@ export class UsmStoryGridAdderComponent implements OnInit {
     return { 'grid-template-columns': gridTemplateColumns };
   }
 
+  public addColumntOnRightOf(column: number) {
+      this.storyService.addColumntOnRightOf(column);
+  }
+
   public addColumntOnLeftOf(column: number) {
-      this.storyService.addColumntOnLeftOf(column);
+    this.storyService.addColumntOnLeftOf(column);
+  }
+
+  public addRowDownOf(row: number) {
+    this.storyService.addRowDownOf(row);
+  }
+
+  public addRowAboveOf(row: number) {
+    this.storyService.addRowAboveOf(row);
   }
 
 }

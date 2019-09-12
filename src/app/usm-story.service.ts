@@ -57,6 +57,25 @@ export class UsmStoryService {
       this.fillWithEmptyStories();
       this.moveColumnsToRightSince(columnIndex);
   }
+
+  public addColumntOnRightOf(columnIndex: number) {
+    this.columns++;
+    this.fillWithEmptyStories();
+    this.moveColumnsToRightSince(columnIndex + 1);
+  }
+
+  public addRowAboveOf(rowIndex: number) {
+    this.rows++;
+    this.fillWithEmptyStories();
+    this.moveRowsDownSince(rowIndex);
+  }
+
+  public addRowDownOf(rowIndex: number) {
+    this.rows++;
+    this.fillWithEmptyStories();
+    this.moveRowsDownSince(rowIndex + 1);
+  }
+
   private moveColumnsToRightSince(columnIndex: number) {
       for (let column = this.columns - 1; column >= columnIndex ; column--) {
         for (let row = 0; row < this.rows; row++) {
@@ -68,6 +87,19 @@ export class UsmStoryService {
         }
       }
   }
+
+  private moveRowsDownSince(rowIndex: number) {
+    console.log('Moving row: ' + rowIndex);
+    for (let row = this.rows - 1; row >= rowIndex ; row--) {
+      for (let column = 0; column < this.columns; column++) {
+        const story = this.getStories()[row][column];
+        if (story) {
+          this.getStories()[row + 1][column] = story;
+          this.deleteStory(row, column);
+        }
+      }
+    }
+}
 
   private fillWithEmptyStories() {
     const missingRows = this.rows - this.getStories().length;
