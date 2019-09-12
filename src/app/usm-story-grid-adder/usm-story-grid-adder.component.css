@@ -1,15 +1,15 @@
 .usm-grid-container{
     background-color: #fbfbfb;
-    min-height: 100%;
-    min-width: 100%;
-    
+    min-height: fit-content;
+    min-width: fit-content;
 }
 .usm-grid-row{
     height: 147px;
-    width: 100%;
+    width: fit-content;
     background-color: transparent;
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
 
 .usm-grid-row-separator{
