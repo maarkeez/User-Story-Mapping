@@ -1,0 +1,1 @@
+web: npm install -g angular-http-server && angular-http-server --path ./dist/user-story-mapping -p $PORT
