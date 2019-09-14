@@ -1,0 +1,279 @@
+[
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        {
+            "text": "Post story",
+            "color": {
+                "name": "Green",
+                "background": "#4FBA92",
+                "hover": "#47a783"
+            }
+        },
+        null,
+        {
+            "text": "Organize stories",
+            "color": {
+                "name": "Green",
+                "background": "#4FBA92",
+                "hover": "#47a783"
+            }
+        },
+        null,
+        null,
+        {
+            "text": "Store stories",
+            "color": {
+                "name": "Green",
+                "background": "#4FBA92",
+                "hover": "#47a783"
+            }
+        },
+        null,
+        {
+            "text": "Share story \nmap",
+            "color": {
+                "name": "Green",
+                "background": "#4FBA92",
+                "hover": "#47a783"
+            }
+        },
+        null,
+        null
+    ],
+    [
+        null,
+        {
+            "text": "Create a note with text",
+            "color": {
+                "name": "Blue",
+                "background": "#CBEEED",
+                "hover": "#B6D6D5"
+            }
+        },
+        null,
+        {
+            "text": "By columns",
+            "color": {
+                "name": "Blue",
+                "background": "#CBEEED",
+                "hover": "#B6D6D5"
+            }
+        },
+        {
+            "text": "By rows",
+            "color": {
+                "name": "Blue",
+                "background": "#CBEEED",
+                "hover": "#B6D6D5"
+            }
+        },
+        null,
+        {
+            "text": "Until next refresh",
+            "color": {
+                "name": "Blue",
+                "background": "#CBEEED",
+                "hover": "#B6D6D5"
+            }
+        },
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        {
+            "text": "Zoom in\nZoom out",
+            "color": {
+                "name": "Blue",
+                "background": "#CBEEED",
+                "hover": "#B6D6D5"
+            }
+        },
+        null,
+        null,
+        {
+            "text": "In local file\nsystem",
+            "color": {
+                "name": "Blue",
+                "background": "#CBEEED",
+                "hover": "#B6D6D5"
+            }
+        },
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        {
+            "text": "Drag and drop",
+            "color": {
+                "name": "Blue",
+                "background": "#CBEEED",
+                "hover": "#B6D6D5"
+            }
+        },
+        null,
+        {
+            "text": "By colors",
+            "color": {
+                "name": "Blue",
+                "background": "#CBEEED",
+                "hover": "#B6D6D5"
+            }
+        },
+        {
+            "text": "Add line/column",
+            "color": {
+                "name": "Blue",
+                "background": "#CBEEED",
+                "hover": "#B6D6D5"
+            }
+        },
+        null,
+        {
+            "text": "Load story\nfrom local",
+            "color": {
+                "name": "Blue",
+                "background": "#CBEEED",
+                "hover": "#B6D6D5"
+            }
+        },
+        null,
+        {
+            "text": "Not in real time",
+            "color": {
+                "name": "Blue",
+                "background": "#CBEEED",
+                "hover": "#B6D6D5"
+            }
+        },
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        {
+            "text": "Mark it with a circle",
+            "color": {
+                "name": "Yellow",
+                "background": "#feffcb",
+                "hover": "#e4e5b6"
+            }
+        },
+        null,
+        {
+            "text": "Resize grid dinamically",
+            "color": {
+                "name": "Blue",
+                "background": "#CBEEED",
+                "hover": "#B6D6D5"
+            }
+        },
+        null,
+        null,
+        {
+            "text": "In external\nfile system",
+            "color": {
+                "name": "Yellow",
+                "background": "#feffcb",
+                "hover": "#e4e5b6"
+            }
+        },
+        null,
+        {
+            "text": "Real time\n(read only)",
+            "color": {
+                "name": "Yellow",
+                "background": "#feffcb",
+                "hover": "#e4e5b6"
+            }
+        },
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        {
+            "text": "By release\n(row name)",
+            "color": {
+                "name": "Yellow",
+                "background": "#feffcb",
+                "hover": "#e4e5b6"
+            }
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+            "text": "Real time\n(write access)",
+            "color": {
+                "name": "Yellow",
+                "background": "#feffcb",
+                "hover": "#e4e5b6"
+            }
+        },
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ]
+]
